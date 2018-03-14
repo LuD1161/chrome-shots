@@ -16,10 +16,10 @@ In the **urls.js** is the list of pages that will be requested to create screens
 
 This is required only once in order to create the Docker image.
 
-    sudo docker-compose build
+    docker-compose build
 
 ### Generate screenshots
 
 Must be run each time to generate all screenshots for the devices and urls. The container will be exited once the job is done.
 
-    sudo docker-compose run
+    docker-compose run puppeteer
