@@ -14,6 +14,7 @@ In the **urls.js** is the list of pages that will be requested to create screens
 
 #### Helpful Tools
 - To easily collect a list of urls- use this tool [SEO Chat Website Crawler](http://tools.seochat.com/tools/online-crawl-google-sitemap-generator), then download the xls file and the urls to **urls.js** 
+- See [puppeteer docs](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md)
 
 
 ### Build the puppeteer container
