@@ -8,9 +8,13 @@ The script is creating a puppeteer instance and goes trough each configured devi
 
 ### Configure devices and urls
 
-A preconfigured list of devices is available in the applications **devices.js**. The list was extracted from the Chromium repository: https://cs.chromium.org/codesearch/f/chromium/src/third_party/WebKit/Source/devtools/front_end/emulated_devices/module.json
+A preconfigured list of devices is available in the applications **devices.js**. The list was extracted from the Chromium repository: [Chromium Emulated Device Configurations Json](https://cs.chromium.org/codesearch/f/chromium/src/third_party/WebKit/Source/devtools/front_end/emulated_devices/module.json)
 
 In the **urls.js** is the list of pages that will be requested to create screenshots.
+
+#### Helpful Tools
+- To easily collect a list of urls- use this tool [SEO Chat Website Crawler](http://tools.seochat.com/tools/online-crawl-google-sitemap-generator), then download the xls file and the urls to **urls.js** 
+
 
 ### Build the puppeteer container
 
