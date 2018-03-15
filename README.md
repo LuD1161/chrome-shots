@@ -2,10 +2,13 @@
 
 A docker compose configuration that uses headless chrome with puppeteer to generate full page screenshots for a given set of urls and devices.
 
+
 ## Usage
 An effective DIY solution to batch screenshot for proofing & testing devices. <br>
 I use in combination with [Invision](https://www.invisionapp.com/). <br>
 Of course, it is useful for several different things. 
+
+![Alt Text](./chrome-shots.gif)
 
 *Proofing Scenario*
 - 1) Edit **devices.js** for each desired device to test
