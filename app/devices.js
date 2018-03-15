@@ -296,6 +296,15 @@ let tablets = [
 
 let notebooks = [
   {
+    deviceName: "My MacBook",
+    width: 1440,
+    height: 900,
+    deviceScaleFactor: 1,
+    userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36",
+    touch: false,
+    mobile: false
+  },
+  {
     deviceName: "Laptop with touch",
     width: 1280,
     height: 950,
@@ -324,4 +333,8 @@ let notebooks = [
   }
 ];
 
-module.exports = [].concat(phones, tablets, notebooks);
+//All
+//module.exports = [].concat(phones, tablets, notebooks);
+
+//Just one device
+module.exports = [].concat(notebooks[0]);

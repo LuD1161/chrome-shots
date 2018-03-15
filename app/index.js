@@ -37,6 +37,7 @@ const devices = require('./devices.js');
           hasTouch: device.touch,
           deviceScaleFactor: device.deviceScaleFactor
       });
+
       await page.setUserAgent(device.userAgent)
 
       let deviceDirectory = screenshotDirectory + filenamify(device.deviceName, {replacement: '_'}) + '/';
@@ -46,12 +47,29 @@ const devices = require('./devices.js');
 
       for (let j = 0, len = urls.length; j < len; j++) {
           let url = urls[j];
-          let imageName = filenamify(url, {replacement: '_'}) + '.png';
+          let imageName = filenamify(url, {replacement: ' '}) + '.png';
 
           // Load page and create full page screenshot
-          await page.goto(url, {waitUntil: 'networkidle2'});
-          await page.screenshot({path: deviceDirectory + imageName, fullPage: true});
+          await page.goto(url, {waitUntil: 'networkidle2'});  // networkidle0, domcontentloaded
+
+          const bodyHandle = await page.$('body');
+          const { width, height } = await bodyHandle.boundingBox();
+
+          await page.screenshot({
+            path: deviceDirectory + imageName,
+            clip: {
+              x: 0,
+              y: 0,
+              width,
+              height
+            },
+            type: 'png'
+          });
+
+          await bodyHandle.dispose();
+
       }
+
     }
 
     await browser.close();
