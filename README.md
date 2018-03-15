@@ -11,7 +11,7 @@ Of course, it is useful for several different things.
 ![Alt Text](./chrome-shots.gif)
 
 *Proofing Scenario*
-- 1) Edit **devices.js** for each desired device to test
+- 1) Edit **devices.js** for each desired device to test and add desired test urls to **url.js**
 - 2) Create Invision prototype for each of those desired device configurations
 - 3) Run script*
 - 4) Upload device screenshot device folder to Invison prototype
