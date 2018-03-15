@@ -23,7 +23,7 @@ In the **urls.js** is the list of pages that will be requested to create screens
 
 #### Helpful Tools
 - To easily collect a list of urls- use this tool [SEO Chat Website Crawler](http://tools.seochat.com/tools/online-crawl-google-sitemap-generator), download the xls file, then add desired urls to **urls.js** 
-- See [puppeteer docs](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md)
+- See [puppeteer docs](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md) for more options on device viewports, configuration, loading options, etc.
 
 <br>
 
