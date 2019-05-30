@@ -10,7 +10,7 @@ ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils 
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
 # Install puppeteer globally
-RUN yarn global add puppeteer@0.13.0 filenamify && yarn cache clean
+RUN yarn global add puppeteer@0.13.0 filenamify argparse && yarn cache clean
 
 ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
 
